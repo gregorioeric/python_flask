@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="/cadastro" method="post">
+      <div>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" />
+      </div>
+      <div>
+        <label for="nome">Email</label>
+        <input type="text" name="email" />
+      </div>
+      <div>
+        <label for="nome">Telefone:</label>
+        <input type="text" name="telefone" />
+      </div>
+      <div>
+        <button type="submit">enviar</button>
+      </div>
+    </form>
+    <div>
+      <ul>
+        {% for item in send %}
+        <li>{{item.nome}}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </body>
+</html>
