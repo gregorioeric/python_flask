@@ -21,5 +21,17 @@ def cadastro():
     print(data)
     return render_template("index.html", send=users)
 
+@app.route('/edit')
+def edit():
+    return render_template('edit_user.html')
+
+@app.route('/listUsers')
+def list_users():
+    return render_template('list_user.html')
+
+@app.route('/api/listUsers')
+def list_users():
+    return render_template('list_user.html')
+
 if __name__ == "__main__":
     app.run(debug=True)

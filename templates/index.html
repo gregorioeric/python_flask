@@ -6,9 +6,16 @@
     <title>Document</title>
   </head>
   <body>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for('home') }}">home</a></li>
+        <li><a href="">list Users</a></li>
+        <li><a href="{{ url_for('edit') }}">Edit</a></li>
+      </ul>
+    </nav>
     <form action="/cadastro" method="post">
       <div>
-        <label for="nome">Nome:</label>
+        <label class="" for="nome">Nome:</label>
         <input type="text" name="nome" />
       </div>
       <div>
